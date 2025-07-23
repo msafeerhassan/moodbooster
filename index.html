@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Booster</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="selfCareBtn"><a href="tips.html">Self Care Tips</a></button>
+    <h1>How are you Feeling today?</h1>
+    <button onclick="themeChange()" id="changeThemebtn">Change Theme</button>
+    <h2 style="text-align: center;
+    padding-top: 70px;">Select your Mood</h2>
+    <div id="form">
+        <div id="inputs">
+        <label><input type="radio" name="mood" value="happy"> Happy</label>
+        <label><input type="radio" name="mood" value="sad"> Sad</label>
+        <label><input type="radio" name="mood" value="tired"> Tired</label>
+        <label><input type="radio" name="mood" value="angry"> Angry</label>
+        <label><input type="radio" name="mood" value="bored"> Bored</label>
+        <br>
+        </div>
+        <div id="submitBtn" class="btns"><button onclick="moodHandler()" id="boostBtn">Boost my Mood</button></div>
+    </div>
+    <div id="moodMsgResponse" class="textResult">Waiting for your mood....🤔</div>
+    <br>
+    <div class="gif">
+        <img src="media/pointing.gif" alt="Dog Pointing Image" id="moodImgResponse" width="300">
+    </div>
+    <div class="btns"><button onclick="randomQuote()">Inspire me</button></div>
+    <div id="quote" class="textResult">should I inspire you?? click the button above..</div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
