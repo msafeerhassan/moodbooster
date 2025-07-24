@@ -103,3 +103,28 @@ document.addEventListener("DOMContentLoaded", () => {
   const tipBtn = document.getElementById("randomTip");
   tipBtn.addEventListener("click", randomTip);
 })
+
+
+function changeGif() {
+  var gif = document.getElementById("tipsImgResponse");
+  gifArr = ["media/fire.gif", "media/jumpHappy.gif", "media/pointing.gif", "media/thinking.gif"];
+  const randomIndex = Math.floor(Math.random() * gifArr.length);
+  gif.src = gifArr[randomIndex]
+}
+
+
+function highlightTips() {
+  const tips = document.querySelectorAll(".tips");
+  tips.forEac
+}
+
+
+
+function bounceGif() {
+  const gif = document.getElementById('tipsImgResponse');
+  gif.style.transform = 'translateY(-50px)';
+  setTimeout(() => {
+    gif.style.transform = "translateY(0px";
+
+  }, 300)
+}
